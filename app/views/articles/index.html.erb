@@ -1,0 +1,6 @@
+
+<% @articles.each do |article| %>
+    <p><%= link_to article.title.upcase, article_path(article.id) %></p>
+<% end %>
+
+ <%= link_to "+ Add a article", new_article_path %>
